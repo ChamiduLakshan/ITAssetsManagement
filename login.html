@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Management System - Login</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom styling to ensure the background/fonts match the screenshots -->
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: #334155; /* Match the dark gray background in devtools wrapper */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex items-center justify-center p-0 sm:p-4 md:p-8">
+
+    <!-- Main Container -->
+    <div class="w-full max-w-[1200px] aspect-[16/10] bg-white shadow-2xl flex flex-col sm:flex-row overflow-hidden rounded-lg">
+        
+        <!-- Left Side: Login Form (100% width on mobile, 50% on large screens) -->
+        <div class="w-full lg:w-1/2 flex flex-col justify-between p-8 md:p-12 lg:p-16 h-full min-h-[500px]">
+            
+            <!-- Top: Logo Section -->
+            <div class="flex items-center space-x-1">
+                <!-- ESU Logo Simulation -->
+                <span class="text-[#004B87] text-4xl font-extrabold tracking-tight">ES</span>
+                <div class="relative inline-block">
+                    <span class="text-[#D62828] text-4xl font-extrabold">U</span>
+                    <span class="absolute -top-1 left-1/2 transform -translate-x-1/2 text-[#D62828] text-sm">●</span>
+                </div>
+            </div>
+
+            <!-- Middle: Main Content -->
+            <div class="my-auto space-y-6 py-8">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-[#1E3A8A] leading-tight">
+                    Learning <br class="hidden sm:inline" />
+                    Management <br class="hidden sm:inline" />
+                    System
+                </h1>
+                
+                <h2 class="text-xl md:text-2xl font-bold text-gray-700 mt-8">
+                    Student Login
+                </h2>
+
+                <!-- Microsoft Sign-In Button -->
+                <button class="w-full max-w-sm flex items-center justify-center space-x-3 border border-gray-300 rounded px-4 py-2.5 hover:bg-gray-50 transition duration-150 ease-in-out shadow-sm mt-4 bg-white">
+                    <!-- Microsoft Logo SVG -->
+                    <svg class="h-5 w-5" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H11V11H0V0Z" fill="#F25022"/>
+                        <path d="M12 0H23V11H12V0Z" fill="#7FBA00"/>
+                        <path d="M0 12H11V23H0V12Z" fill="#00A4EF"/>
+                        <path d="M12 12H23V23H12V12Z" fill="#FFB900"/>
+                    </svg>
+                    <span class="text-gray-700 font-semibold text-sm">Sign in with Microsoft</span>
+                </button>
+            </div>
+
+            <!-- Bottom: Support Footer -->
+            <div class="text-xs text-gray-500 border-t border-gray-100 pt-4 mt-auto">
+                Having trouble logging in? call us at 
+                <a href="tel:0117677655" class="text-[#004B87] font-bold hover:underline">011 767 7655</a> 
+                for assistance!
+            </div>
+        </div>
+
+        <!-- Right Side: Image Column (Hidden on mobile/tablet, visible on 'lg' and larger screens) -->
+        <div class="hidden lg:flex lg:w-1/2 bg-gray-100 relative overflow-hidden">
+            <!-- Simulated Graduation Image (Replace src with your actual image file path) -->
+            <img 
+                src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1000&auto=format&fit=crop" 
+                alt="Students Graduating" 
+                class="w-full h-full object-cover object-center"
+            />
+        </div>
+
+    </div>
+
+</body>
+</html>
